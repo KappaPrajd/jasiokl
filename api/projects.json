@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Projekt1",
+        "thumbnail": "whatever",
+        "description": "test"
+    },
+    {
+        "name": "Projekt2",
+        "thumbnail": "whatever",
+        "description": "test"
+    }
+]

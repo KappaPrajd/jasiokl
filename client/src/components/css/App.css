@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "assc";
+  src: url("../../fonts/assc.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "assc";
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
