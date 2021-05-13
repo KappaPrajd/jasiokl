@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.home-content {
+  height: 90%;
+  display: flex;
+}
+
+.left-panel,
+.right-panel {
+  width: 50%;
+}
+
+.right-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait {
+  width: 500px;
+  height: 700px;
+}
+
+.footer {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

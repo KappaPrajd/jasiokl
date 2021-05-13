@@ -2,12 +2,16 @@
   display: flex;
   color: white;
   width: 100%;
-  padding: 70px;
+  padding: 70px 70px 0;
 }
 
 .nav-left {
   width: 70%;
   display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 .line {
@@ -39,20 +43,20 @@
   display: none;
 }
 
-.nav-active {
-  height: 100vh;
-}
-
 .nav-items-active {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  height: 90%;
 }
 
 .nav-item {
   text-transform: uppercase;
   text-align: center;
+  font-size: 150px;
+  letter-spacing: 5px;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 30px;
 }
