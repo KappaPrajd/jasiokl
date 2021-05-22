@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/Header.css";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
-  const toggleHide = () =>
+  const toggleHide = () => {
     document.querySelector(".main").classList.toggle("hide");
+    setIsActive(!isActive);
+  };
 
   return (
     <React.Fragment>
@@ -13,10 +16,7 @@ const Header = () => {
         <div className="nav-left">
           <div
             className={`hamburger ${isActive ? "hamburger-active" : ""}`}
-            onClick={() => {
-              setIsActive(!isActive);
-              toggleHide();
-            }}
+            onClick={() => toggleHide()}
           >
             <div className="line line1"></div>
             <div className="line line2"></div>
@@ -29,9 +29,21 @@ const Header = () => {
         </div>
       </div>
       <div className={`nav-items ${isActive ? "nav-items-active" : ""}`}>
-        <h2 className="nav-item">O mnie</h2>
-        <h2 className="nav-item">Projekty</h2>
-        <h2 className="nav-item">Kontakt</h2>
+        <Link to="/about">
+          <h2 className="nav-item" onClick={() => toggleHide()}>
+            O mnie
+          </h2>
+        </Link>
+        <Link to="/projects">
+          <h2 className="nav-item" onClick={() => toggleHide()}>
+            Projekty
+          </h2>
+        </Link>
+        <Link to="/contact">
+          <h2 className="nav-item" onClick={() => toggleHide()}>
+            Kontakt
+          </h2>
+        </Link>
       </div>
     </React.Fragment>
   );

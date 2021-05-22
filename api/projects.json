@@ -1,12 +1,20 @@
 [
     {
-        "name": "Projekt1",
-        "thumbnail": "whatever",
+        "id": "001",
+        "name": "Portrety",
+        "thumbnail": "http://localhost:5000/portraits/1.jpg",
         "description": "test"
     },
     {
-        "name": "Projekt2",
-        "thumbnail": "whatever",
+        "id": "002",
+        "name": "Przyroda",
+        "thumbnail": "http://localhost:5000/nature/1.jpg",
+        "description": "test"
+    },
+    {
+        "id": "003",
+        "name": "Sport",
+        "thumbnail": "http://localhost:5000/sports/1.jpg",
         "description": "test"
     }
 ]

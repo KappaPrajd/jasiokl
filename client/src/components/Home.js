@@ -8,13 +8,13 @@ const Home = () => {
       <Header />
       <div className="main">
         <div className="home-content">
-          <div className="left-panel"></div>
+          <div className="left-panel">
+            <div className="image-container"></div>
+            <div className="image-container"></div>
+            <div className="image-container"></div>
+          </div>
           <div className="right-panel">
-            <img
-              className="portrait"
-              src="img/portrait1.png"
-              alt="portrait"
-            ></img>
+            <div className="portrait-container"></div>
           </div>
         </div>
         <div className="footer">

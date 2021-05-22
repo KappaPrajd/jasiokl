@@ -1,38 +1,73 @@
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .home-content {
-  height: 90%;
+  width: 90%;
+  height: 100%;
   display: flex;
 }
 
 .left-panel,
 .right-panel {
   width: 50%;
-}
-
-.right-panel {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.portrait {
+.left-panel {
+  flex-direction: column;
+}
+
+.portrait-container {
   width: 500px;
   height: 700px;
+  background-image: url("../../img/portrait1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .footer {
+  position: absolute;
+  bottom: 20px;
   width: 100%;
-  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.image-container {
+  width: 430px;
+  height: 225px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.image-container:first-child {
+  background-image: url("../../img/home-1.jpg");
+}
+
+.image-container:nth-child(2) {
+  background-image: url("../../img/home-2.jpg");
+  margin-left: 180px;
+  margin-top: -20px;
+}
+
+.image-container:last-child {
+  background-image: url("../../img/home-3.jpg");
+  margin-left: -70px;
+  margin-top: -20px;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
 }
