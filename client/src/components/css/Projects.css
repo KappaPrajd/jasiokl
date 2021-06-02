@@ -14,8 +14,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 500px;
-  opacity: 0.3;
+  font-size: 600px;
+  opacity: 0.4;
   -webkit-text-stroke: 3px #444;
   color: transparent;
 }
@@ -52,6 +52,8 @@
 .slide-id,
 .slide-name {
   transition: 0.5s;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .slide-id {
