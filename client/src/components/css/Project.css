@@ -1,19 +1,22 @@
 .project {
   display: flex;
-  align-items: baseline;
   flex-direction: row;
 }
 
 .project-meta {
   width: 40%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project-title {
   text-transform: uppercase;
   text-align: center;
   font-size: 100px;
-  padding: 100px 0 50px;
+  padding-bottom: 50px;
   letter-spacing: 10px;
 }
 
@@ -29,14 +32,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .previous-project,
 .next-project {
-  width: 40px;
-  height: 40px;
-  border: 2px solid white;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -77,4 +80,35 @@
 .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+
+.project-items {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.swiper-container-project {
+  width: 100%;
+}
+
+.swiper-slide-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-img {
+  width: 800px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-number {
+  margin-top: 10px;
+  font-size: 30px;
+  letter-spacing: 5px;
 }

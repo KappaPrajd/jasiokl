@@ -21,10 +21,10 @@ const Projects = () => {
   const renderSlides = () => {
     return projects.map((project) => {
       return (
-        <SwiperSlide key={project.id}>
+        <SwiperSlide className="swiper-slide-projects" key={project.id}>
           <Link to={`/project/${project.id}`}>
             <div
-              className="slide-img"
+              className="slide-img-projects"
               style={{ backgroundImage: `url(${project.thumbnail})` }}
             >
               <div className="slide-id">
@@ -45,7 +45,12 @@ const Projects = () => {
       <Header />
       <div className="main projects">
         <h1 className="bg-header">PROJEKTY</h1>
-        <Swiper slidesPerView="auto" spaceBetween={175} centeredSlides={true}>
+        <Swiper
+          className="swiper-container-projects"
+          slidesPerView="auto"
+          spaceBetween={175}
+          centeredSlides={true}
+        >
           {renderSlides()}
         </Swiper>
         <div className="footer">

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "./Header";
+import "swiper/swiper-bundle.css";
 import "./css/Project.css";
 
 const Project = (props) => {
   const [projectMeta, setProjectMeta] = useState({});
   const [projectItems, setProjectItems] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  console.log(props.match);
-
-  //fire useEffect on load and when user moves between projects (and changes url at the same time, that's why the dependency array) in order to get the correct data
+  //fire useEffect on load and when user moves between projects (and changes url at the same time, hence the dependency array) in order to get the correct data
   useEffect(() => {
     const fetchProject = async () => {
       const url = window.location.href.split("/");
@@ -26,6 +27,19 @@ const Project = (props) => {
 
     fetchProject();
   }, [props.match.params.id]);
+
+  const renderSlides = () => {
+    return projectItems.map((el, index) => {
+      return (
+        <SwiperSlide className="swiper-slide-project" key={index}>
+          <div
+            className="item-img"
+            style={{ backgroundImage: `url(${el})` }}
+          ></div>
+        </SwiperSlide>
+      );
+    });
+  };
 
   return (
     <React.Fragment>
@@ -47,7 +61,20 @@ const Project = (props) => {
             </Link>
           </div>
         </div>
-        <div className="project-items"></div>
+        <div className="project-items">
+          <Swiper
+            className="swiper-container-project"
+            slidesPerView={1}
+            onSlideChange={(e) => setCurrentSlide(e.realIndex)}
+          >
+            {renderSlides()}
+          </Swiper>
+          <div className="slide-number">
+            <h4>
+              {currentSlide + 1}/{projectItems.length}
+            </h4>
+          </div>
+        </div>
         <div className="footer">Jan Kluczkiewicz</div>
       </div>
     </React.Fragment>

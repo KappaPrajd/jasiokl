@@ -5,7 +5,7 @@
         "pathRelative": "http://localhost:5000/portraits/",
         "pathAbsolute": "public/portraits",
         "thumbnail": "http://localhost:5000/portraits/1.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui, a tincidunt nisl justo a ex. Aliquam erat volutpat.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui",
         "previousProject": "003",
         "nextProject": "002"
     },
@@ -15,8 +15,8 @@
         "pathRelative": "http://localhost:5000/nature/",
         "pathAbsolute": "public/nature",
         "thumbnail": "http://localhost:5000/nature/1.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui, a tincidunt nisl justo a ex. Aliquam erat volutpat.",
-        "previousProject": "002",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui",
+        "previousProject": "001",
         "nextProject": "003"
     },
     {
@@ -25,7 +25,7 @@
         "pathRelative": "http://localhost:5000/sports/",
         "pathAbsolute": "public/sports",
         "thumbnail": "http://localhost:5000/sports/1.jpg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui, a tincidunt nisl justo a ex. Aliquam erat volutpat.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lacus nec sollicitudin consectetur. Suspendisse felis ipsum, ultrices eu eros sed, aliquam malesuada dui. Quisque tellus lorem, laoreet non tortor eu, tincidunt hendrerit mi. Donec feugiat purus at convallis fermentum. Fusce dapibus enim at libero cursus, non finibus mauris luctus. Vestibulum interdum dolor sit amet nibh scelerisque, dictum tristique sapien sagittis. Vestibulum volutpat, mauris at tempus luctus, nulla magna fermentum dui",
         "previousProject": "002",
         "nextProject": "001"
     }

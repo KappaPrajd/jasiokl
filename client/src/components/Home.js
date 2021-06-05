@@ -17,9 +17,9 @@ const Home = () => {
             <div className="portrait-container"></div>
           </div>
         </div>
-        <div className="footer">
-          <h3>Jan Kluczkiewicz</h3>
-        </div>
+      </div>
+      <div className="footer">
+        <h3>Jan Kluczkiewicz</h3>
       </div>
     </React.Fragment>
   );
