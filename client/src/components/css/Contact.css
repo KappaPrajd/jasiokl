@@ -1,0 +1,21 @@
+.contact {
+  flex-direction: row;
+  text-transform: uppercase;
+}
+
+.contact-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-item {
+  font-size: 65px;
+  letter-spacing: 3px;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 50px;
+}

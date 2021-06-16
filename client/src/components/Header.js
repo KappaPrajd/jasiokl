@@ -24,8 +24,20 @@ const Header = () => {
           </div>
         </div>
         <div className="nav-right">
-          <h3>FB</h3>
-          <h3>IG</h3>
+          <a
+            href="https://www.facebook.com/jasiokl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>FB</h3>
+          </a>
+          <a
+            href="https://www.instagram.com/jasiokl_photo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h3>IG</h3>
+          </a>
         </div>
       </div>
       <div className={`nav-items ${isActive ? "nav-items-active" : ""}`}>
