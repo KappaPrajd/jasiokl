@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "./Header";
+import Footer from "./Footer";
 import "swiper/swiper-bundle.css";
 import "./css/Project.css";
 
@@ -10,6 +11,7 @@ const Project = (props) => {
   const [projectMeta, setProjectMeta] = useState({});
   const [projectItems, setProjectItems] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [error, setError] = useState();
 
   //fire useEffect on load and when user moves between projects (and changes url at the same time, hence the dependency array) in order to get the correct data
   useEffect(() => {
@@ -20,6 +22,11 @@ const Project = (props) => {
       const res = await axios.get("http://localhost:5000/api/project", {
         params: { id },
       });
+
+      if (res.data.error) {
+        setError(res.data.error);
+        return;
+      }
 
       setProjectMeta(res.data.projectMeta);
       setProjectItems(res.data.projectItems);
@@ -40,6 +47,10 @@ const Project = (props) => {
       );
     });
   };
+
+  if (error) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <React.Fragment>
@@ -75,7 +86,7 @@ const Project = (props) => {
             </h4>
           </div>
         </div>
-        <div className="footer">Jan Kluczkiewicz</div>
+        <Footer />
       </div>
     </React.Fragment>
   );

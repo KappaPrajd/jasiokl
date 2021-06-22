@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "./Header";
+import Footer from "./Footer";
 import "swiper/swiper-bundle.css";
 import "./css/Projects.css";
+
+// Slides containing responsive pictures break Swiper when window is resized
+// https://github.com/nolimits4web/swiper/issues/3088
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -53,9 +57,7 @@ const Projects = () => {
         >
           {renderSlides()}
         </Swiper>
-        <div className="footer">
-          <h3>Jan Kluczkiewicz</h3>
-        </div>
+        <Footer />
       </div>
     </React.Fragment>
   );

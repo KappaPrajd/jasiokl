@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import "./css/Home.css";
 
 const Home = () => {
@@ -18,9 +19,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="footer">
-        <h3>Jan Kluczkiewicz</h3>
-      </div>
+      <Footer />
     </React.Fragment>
   );
 };

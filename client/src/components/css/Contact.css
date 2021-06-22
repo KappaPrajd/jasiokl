@@ -12,10 +12,9 @@
 }
 
 .contact-item {
-  font-size: 65px;
-  letter-spacing: 3px;
+  font-size: 90px;
 }
 
 .contact-item:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }

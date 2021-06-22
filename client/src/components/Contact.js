@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import "./css/Contact.css";
 
 const Contact = () => {
@@ -30,8 +31,7 @@ const Contact = () => {
           </a>
           <h4 className="contact-item">675 589 478</h4>
         </div>
-
-        <div className="footer">Jan Kluczkiewicz</div>
+        <Footer />
       </div>
     </React.Fragment>
   );
