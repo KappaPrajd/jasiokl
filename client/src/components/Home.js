@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className="main">
+      <div className="main home">
         <div className="home-content">
           <div className="left-panel">
             <div className="image-container"></div>
@@ -18,8 +18,8 @@ const Home = () => {
             <div className="portrait-container"></div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </React.Fragment>
   );
 };

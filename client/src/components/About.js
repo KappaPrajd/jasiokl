@@ -23,8 +23,8 @@ const About = () => {
             culpa
           </p>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </React.Fragment>
   );
 };
