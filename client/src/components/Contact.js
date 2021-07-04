@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "./css/Contact.css";
 
 const Contact = () => {
+  const emailRef = useRef();
+
+  useEffect(() => {
+    const checkWidth = () => {
+      window.innerWidth <= 900
+        ? (emailRef.current.innerHTML = "Email")
+        : (emailRef.current.innerHTML = "jan.kluczkiewicz@gmail.com");
+    };
+
+    window.addEventListener("resize", checkWidth);
+    window.addEventListener("load", checkWidth);
+
+    return () => {
+      window.removeEventListener("resize", checkWidth);
+      window.removeEventListener("load", checkWidth);
+    };
+  }, []);
+
   return (
     <React.Fragment>
       <Header />
@@ -27,7 +45,7 @@ const Contact = () => {
             <h4>Instagram</h4>
           </a>
           <a href="mailto:jan.kluczkiewicz@gmail.com" className="contact-item">
-            <h4>jan.kluczkiewicz@gmail.com</h4>
+            <h4 ref={emailRef}>jan.kluczkiewicz@gmail.com</h4>
           </a>
           <h4 className="contact-item">675 589 478</h4>
         </div>
