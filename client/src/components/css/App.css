@@ -22,12 +22,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 850px;
+  position: relative;
 }
 
 .footer {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

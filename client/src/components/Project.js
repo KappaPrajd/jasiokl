@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Keyboard } from "swiper";
 import Header from "./Header";
 import Footer from "./Footer";
 import "swiper/swiper-bundle.css";
@@ -12,6 +13,8 @@ const Project = (props) => {
   const [projectItems, setProjectItems] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [error, setError] = useState();
+
+  SwiperCore.use([Keyboard]);
 
   //fire useEffect on load and when user moves between projects (and changes url at the same time, hence the dependency array) in order to get the correct data
   useEffect(() => {
@@ -77,6 +80,7 @@ const Project = (props) => {
             className="swiper-container-project"
             slidesPerView={1}
             onSlideChange={(e) => setCurrentSlide(e.realIndex)}
+            keyboard={true}
           >
             {renderSlides()}
           </Swiper>

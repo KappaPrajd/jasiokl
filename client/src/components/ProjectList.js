@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Keyboard } from "swiper";
 import Header from "./Header";
 import Footer from "./Footer";
 import "swiper/swiper-bundle.css";
-import "./css/Projects.css";
+import "./css/ProjectList.css";
 
 // Slides containing responsive pictures break Swiper when window is resized
 // https://github.com/nolimits4web/swiper/issues/3088
+
+SwiperCore.use([Keyboard]);
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -54,6 +57,7 @@ const Projects = () => {
           slidesPerView="auto"
           spaceBetween={175}
           centeredSlides={true}
+          keyboard={true}
         >
           {renderSlides()}
         </Swiper>

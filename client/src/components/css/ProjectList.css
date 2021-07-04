@@ -88,3 +88,36 @@
 .swiper-slide-active .slide-name {
   left: 5%;
 }
+
+@media only screen and (max-width: 1400px) {
+  .bg-header {
+    font-size: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .swiper-slide-projects {
+    width: 600px;
+    height: 380px;
+  }
+
+  .bg-header {
+    font-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-slide-projects {
+    width: 468px;
+    height: 350px;
+  }
+
+  .slide-name,
+  .slide-id {
+    font-size: 45px;
+  }
+
+  .bg-header {
+    font-size: 220px;
+  }
+}

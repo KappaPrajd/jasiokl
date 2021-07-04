@@ -12,7 +12,7 @@
 
 .about-info {
   width: 60%;
-  padding: 0 120px;
+  padding-right: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -46,4 +46,55 @@
 
 .about-image:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1400px) {
+  .about-info {
+    padding-right: 30px;
+  }
+
+  .about-info p {
+    font-size: 40px;
+    line-height: 3.5rem;
+  }
+
+  .about-image:first-child {
+    width: 250px;
+    height: 333px;
+  }
+
+  .about-image:nth-child(2) {
+    width: 250px;
+    height: 333px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    position: relative;
+  }
+
+  .about-info {
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-info p {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    line-height: 3.2rem;
+  }
+
+  .about-image {
+    opacity: 0.8;
+  }
+
+  .about-image:nth-child(2) {
+    margin-left: 300px;
+  }
 }

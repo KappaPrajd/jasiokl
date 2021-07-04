@@ -1,7 +1,7 @@
 .project {
   display: flex;
   flex-direction: row;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .project-meta {
@@ -22,10 +22,10 @@
 }
 
 .project-desc {
-  font-size: 25px;
-  padding: 0 110px;
+  font-size: 28px;
+  padding: 0 90px;
   text-align: center;
-  line-height: 190%;
+  line-height: 140%;
 }
 
 .project-nav {
@@ -33,7 +33,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .previous-project,
@@ -112,4 +112,61 @@
   margin-top: 10px;
   font-size: 30px;
   letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .project-desc {
+    padding: 0 50px 0 20px;
+    line-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-desc {
+    display: none;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project-title {
+    padding-bottom: 0;
+  }
+
+  .previous-project {
+    position: absolute;
+    left: -50px;
+    top: 30px;
+  }
+
+  .next-project {
+    position: absolute;
+    right: -50px;
+    top: 30px;
+  }
+
+  .project-meta {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  .project-items {
+    width: 80%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .project-title {
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+  }
+
+  .project-items {
+    width: 100%;
+    height: 450px;
+  }
 }
