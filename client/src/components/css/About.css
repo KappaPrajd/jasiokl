@@ -91,10 +91,6 @@
   }
 
   .about-image {
-    opacity: 0.8;
-  }
-
-  .about-image:nth-child(2) {
-    margin-left: 300px;
+    display: none;
   }
 }
