@@ -13,12 +13,11 @@ const Contact = () => {
         : (emailRef.current.innerHTML = "jan.kluczkiewicz@gmail.com");
     };
 
+    checkWidth();
     window.addEventListener("resize", checkWidth);
-    window.addEventListener("load", checkWidth);
 
     return () => {
       window.removeEventListener("resize", checkWidth);
-      window.removeEventListener("load", checkWidth);
     };
   }, []);
 
