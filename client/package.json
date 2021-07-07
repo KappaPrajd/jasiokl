@@ -26,7 +26,6 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://https://jasiokl.herokuapp.com/",
   "browserslist": {
     "production": [
       ">0.2%",
