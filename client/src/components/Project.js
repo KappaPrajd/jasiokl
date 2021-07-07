@@ -22,7 +22,7 @@ const Project = (props) => {
       const url = window.location.href.split("/");
       const id = url[url.length - 1];
 
-      const res = await axios.get("http://localhost:5000/api/project", {
+      const res = await axios.get("/api/project", {
         params: { id },
       });
 
