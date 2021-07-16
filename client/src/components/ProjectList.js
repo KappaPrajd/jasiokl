@@ -55,15 +55,9 @@ const Projects = () => {
         <Swiper
           className="swiper-container-projects"
           slidesPerView="auto"
-          spaceBetween={window.innerWidth > 600 ? 175 : 0}
+          spaceBetween={175}
           centeredSlides={true}
           keyboard={true}
-          onResize={(e) => {
-            window.innerWidth > 600
-              ? (e.params.spaceBetween = 175)
-              : (e.params.spaceBetween = 0);
-            e.update();
-          }}
         >
           {renderSlides()}
         </Swiper>
