@@ -58,7 +58,12 @@ const Projects = () => {
           spaceBetween={window.innerWidth > 600 ? 175 : 0}
           centeredSlides={true}
           keyboard={true}
-          onResize={(e) => console.log(e)}
+          onResize={(e) => {
+            window.innerWidth > 600
+              ? (e.params.spaceBetween = 175)
+              : (e.params.spaceBetween = 0);
+            e.update();
+          }}
         >
           {renderSlides()}
         </Swiper>
