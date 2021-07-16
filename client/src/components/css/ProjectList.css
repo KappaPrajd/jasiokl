@@ -108,8 +108,8 @@
 
 @media only screen and (max-width: 600px) {
   .swiper-slide-projects {
-    width: 468px;
-    height: 350px;
+    width: 100vw;
+    height: 375px;
   }
 
   .slide-name,
@@ -118,6 +118,14 @@
   }
 
   .bg-header {
-    font-size: 220px;
+    display: none;
+  }
+
+  .swiper-slide-active .slide-id {
+    right: 7%;
+  }
+
+  .swiper-slide-active .slide-name {
+    left: 7%;
   }
 }

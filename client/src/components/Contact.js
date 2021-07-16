@@ -44,7 +44,7 @@ const Contact = () => {
             <h4>Instagram</h4>
           </a>
           <a href="mailto:jan.kluczkiewicz@gmail.com" className="contact-item">
-            <h4 ref={emailRef}>jan.kluczkiewicz@gmail.com</h4>
+            <h4 ref={emailRef}>Email</h4>
           </a>
           <h4 className="contact-item">675 589 478</h4>
         </div>

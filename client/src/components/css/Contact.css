@@ -18,3 +18,9 @@
 .contact-item:not(:last-child) {
   margin-bottom: 60px;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact-item {
+    font-size: 70px;
+  }
+}
