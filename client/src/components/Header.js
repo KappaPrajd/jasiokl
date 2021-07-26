@@ -25,14 +25,14 @@ const Header = () => {
         </div>
         <div className="nav-right">
           <a
-            href="https://www.facebook.com/jasiokl"
+            href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <h3>FB</h3>
           </a>
           <a
-            href="https://www.instagram.com/jasiokl_photo/"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >

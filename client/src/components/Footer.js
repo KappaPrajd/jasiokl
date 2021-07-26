@@ -6,7 +6,7 @@ const Footer = () => {
     <React.Fragment>
       <div className="footer">
         <Link to="/">
-          <h3>Jan Kluczkiewicz</h3>
+          <h3>John Doe</h3>
         </Link>
       </div>
     </React.Fragment>

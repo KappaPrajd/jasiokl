@@ -10,7 +10,7 @@ const Contact = () => {
     const checkWidth = () => {
       window.innerWidth <= 900
         ? (emailRef.current.innerHTML = "Email")
-        : (emailRef.current.innerHTML = "jan.kluczkiewicz@gmail.com");
+        : (emailRef.current.innerHTML = "john.doe@mail.com");
     };
 
     checkWidth();
@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="main contact">
         <div className="contact-center">
           <a
-            href="https://www.facebook.com/jasiokl"
+            href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
@@ -36,17 +36,17 @@ const Contact = () => {
             <h4>Facebook</h4>
           </a>
           <a
-            href="https://www.instagram.com/jasiokl_photo/"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
           >
             <h4>Instagram</h4>
           </a>
-          <a href="mailto:jan.kluczkiewicz@gmail.com" className="contact-item">
+          <a href="mailto:john.doe@mail.com" className="contact-item">
             <h4 ref={emailRef}>Email</h4>
           </a>
-          <h4 className="contact-item">675 589 478</h4>
+          <h4 className="contact-item">123 456 789</h4>
         </div>
         <Footer />
       </div>
